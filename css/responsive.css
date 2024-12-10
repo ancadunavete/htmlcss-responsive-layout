@@ -1,1 +1,103 @@
 /* Soluzione qui */
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* Logo aligned to the left */
+    #topbar {
+        justify-content: flex-start;
+    }
+
+    /* Increase padding in main content */
+    main {
+        padding: 40px;
+    }
+
+    /* Display the Dolce Tradizionale text */
+    .recipe-origin {
+        display: inline;
+    }
+
+    /* Increase title size */
+    .recipe-name {
+        font-size: 2.5rem;
+    }
+
+    /* Arrange recipe info in grid */
+    .quick-notes ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* Widen social buttons */
+    .social-networks button {
+        width: 100%;
+    }
+
+    /* Display the ad banner */
+    .ads {
+        display: block;
+    }
+
+    /* Wrap text around recipe image */
+    .presentation img {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .presentation p {
+        text-align: justify;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 992px) {
+    /* Increase title size */
+    .recipe-name {
+        font-size: 3rem;
+    }
+
+    /* Arrange recipe info vertically */
+    .quick-notes ul {
+        display: block;
+    }
+
+    /* Display video and recipe info side by side */
+    .recipe-card {
+        display: flex;
+        gap: 20px;
+    }
+
+    .recipe-video {
+        width: 60%;
+        height: 500px;
+    }
+
+    .recipe-info {
+        width: 40%;
+    }
+
+    /* Show names on social buttons */
+    .social-networks .label {
+        display: inline;
+    }
+
+    /* Footer: align data and navigation */
+    footer {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    address {
+        flex: 1;
+    }
+
+    footer ul {
+        flex: 1;
+        justify-content: flex-end;
+    }
+}
