@@ -2,7 +2,7 @@
 
 /* Tablet */
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) {
     /* Logo aligned to the left */
     #topbar {
         justify-content: flex-start;
@@ -20,14 +20,16 @@
 
     /* Increase title size */
     .recipe-name {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     /* Arrange recipe info in grid */
     .quick-notes ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        display: flex;
+        flex wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
     }
 
     /* Widen social buttons */
